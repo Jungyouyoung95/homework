@@ -35,11 +35,11 @@ console.log(array);
 // 1~100 array에 홀수 짝수 순으로 배열
 
 const array2 = [1];
-for(let q = 2; q <= 100; q++){
-    if( q % 2 === 1 ){
-        array2.push(q);
-        let sum = q - 1; 
+for(let i = 2; i < 101; i++){
+    if( i % 2 === 1 ){
+        array2.push(i);
+        let sum = i - 1; 
         array2.push(sum);        
     } 
-} array2.push(100)
+}
 console.log(array2)
