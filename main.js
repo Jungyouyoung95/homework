@@ -19,7 +19,7 @@ for(let i = 0; i <= 100; i++){
 } */
 
 // 1~100 array 홀수일 때 앞에서 추가, 짝수일때는 뒤에서 추가 
-const array = [];
+/* const array = [];
 for(let i = 1; i <= 100; i++){
     if(i % 2 === 1) {
         array.push(i);
@@ -30,16 +30,34 @@ for(let i = 1; i <= 100; i++){
         array.push(i);
     }
 }
-console.log(array); 
+console.log(array);  */
 
 // 1~100 array에 홀수 짝수 순으로 배열
 
-const array2 = [1];
+/* onst array2 = [1];
 for(let i = 2; i < 101; i++){
     if( i % 2 === 1 ){
         array2.push(i);
         let sum = i - 1; 
-        array2.push(sum);        
+        array2.push(sum);
     } 
 }
-console.log(array2)
+console.log(array2) */
+
+// 피보나치 수열 
+
+function fibonacci(n) {
+    let newArr = [0, 1];
+    if (n === 0) {
+        console.log([0]);
+    }
+    if (n === 1) {
+        console.log([0, 1]);
+    }
+    for(let i = 2; i <= n; i++){
+        newArr.push(newArr[i - 2] + newArr[i - 1]);
+        console.log(newArr);
+    }
+    
+}
+fibonacci(11);
