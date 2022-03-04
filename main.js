@@ -38,7 +38,7 @@ const array2 = [1];
 for(let q = 2; q <= 100; q++){
     if( q % 2 === 1 ){
         array2.push(q);
-        sum = q - 1; 
+        let sum = q - 1; 
         array2.push(sum);        
     } 
 } array2.push(100)
