@@ -46,18 +46,12 @@ console.log(array2) */
 
 // 피보나치 수열 
 
-function fibonacci(n) {
+function fibonacci() {
     let newArr = [0, 1];
-    if (n === 0) {
-        console.log([0]);
-    }
-    if (n === 1) {
-        console.log([0, 1]);
-    }
-    for(let i = 2; i <= n; i++){
+    for(let i = 2; i <= 11; i++){
         newArr.push(newArr[i - 2] + newArr[i - 1]);
         console.log(newArr);
     }
     
 }
-fibonacci(11);
+fibonacci();
