@@ -25,9 +25,9 @@ for(let i = 1; i <= 100; i++){
         array.push(i);
     }
 }
-for(let y = 1; y <= 100; y++){
-    if(y % 2 === 0) {
-        array.push(y);
+for(let i = 1; i <= 100; i++){
+    if(i % 2 === 0) {
+        array.push(i);
     }
 }
 console.log(array); 
