@@ -46,10 +46,8 @@ console.log(array2) */
 
 // 피보나치 수열 
 
-const number = prompt("피보나치 몇번 째 수열까지 보시겠습니까?", "ex)1, 2, 3...");
-
-
-function fibonacci() {
+/* function fibonacci() {
+    const number = prompt("피보나치 몇번 째 수열까지 보시겠습니까?", "ex)1, 2, 3...");
     let newArr = [0, 1];
     for(let i = 2; i <= number; i++){
         newArr.push(newArr[i - 2] + newArr[i - 1]);
@@ -57,4 +55,15 @@ function fibonacci() {
     }
     
 }
-fibonacci();
+fibonacci();*/
+
+// random을 이용해서 100회 반복하는 동안 3의 배수가 나오는 횟수를 구하는 프로그램을 작성하시오. 1~100
+
+let randomNumber = Math.floor(Math.random()*100);
+let count = 0;
+for(let i = 0; i < 100; i++){
+    if(randomNumber % 3 === 0){
+        ++count;
+    }
+}
+console.log(count);
