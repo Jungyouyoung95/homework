@@ -59,9 +59,10 @@ fibonacci();*/
 
 // random을 이용해서 100회 반복하는 동안 3의 배수가 나오는 횟수를 구하는 프로그램을 작성하시오. 1~100
 
-let randomNumber = Math.floor(Math.random()*100);
+
 let count = 0;
 for(let i = 0; i < 100; i++){
+    let randomNumber = Math.floor(Math.random()*100);
     if(randomNumber % 3 === 0){
         ++count;
     }
