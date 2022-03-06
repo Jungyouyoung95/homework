@@ -46,9 +46,12 @@ console.log(array2) */
 
 // 피보나치 수열 
 
+const number = prompt("피보나치 몇번 째 수열까지 보시겠습니까?", "ex)1, 2, 3...");
+
+
 function fibonacci() {
     let newArr = [0, 1];
-    for(let i = 2; i <= 11; i++){
+    for(let i = 2; i <= number; i++){
         newArr.push(newArr[i - 2] + newArr[i - 1]);
         console.log(newArr);
     }
